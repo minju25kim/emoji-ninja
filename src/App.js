@@ -34,7 +34,17 @@ function App() {
           sliced emojis: <span>{emoji ? slice : "👨👩👧 example"}</span>
         </div>
       </div>
-      <footer>Looking for designer...</footer>
+      <footer>
+        Created by{" "}
+        <a
+          className="sourceCode"
+          href="https://github.com/minju25kim/emoji-ninja"
+        >
+          Minju Kim
+        </a>
+        .<br />
+        Looking for designer...
+      </footer>
     </div>
   );
 }

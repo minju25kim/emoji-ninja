@@ -12,3 +12,12 @@
 .emoji {
   font-size: 3rem;
 }
+.sourceCode {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+}
+.sourceCode:hover {
+  background-color: #000;
+  color: #fff;
+}
