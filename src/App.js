@@ -17,15 +17,24 @@ function App() {
   return (
     <div className="App">
       <form onSubmit={handleEmoji}>
-        <input name="emoji"></input>
-        <button type="submit">Enter</button>
+        <input
+          name="emoji"
+          className="typeEmoji"
+          placeholder="type emoji... 👩‍💻"
+        ></input>
+        <button type="submit" className="typeEmoji">
+          Enter
+        </button>
       </form>
-      <div>
-        user input<span>{emoji}</span>
+      <div className="emoji">
+        <div>
+          original emoji: <span>{emoji ? emoji : "👨‍👩‍👧 example"}</span>
+        </div>
+        <div>
+          sliced emojis: <span>{emoji ? slice : "👨👩👧 example"}</span>
+        </div>
       </div>
-      <div>
-        sliced emojis<span>{slice}</span>
-      </div>
+      <footer>Looking for designer...</footer>
     </div>
   );
 }
